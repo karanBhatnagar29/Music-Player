@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Urbanist", serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+.main {
+  width: 30rem;
+  height: 52rem;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  outline: none;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #f5fefd;
+}
+.music-player img {
+  width: 22.5rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.music-container .music {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin-bottom: 0.3rem;
+  word-spacing: 0.5rem;
+}
+.music-container .artist {
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+.music-container {
+  margin: 2.5rem 0 3.5rem 0;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+  gap: 5rem;
+  margin: 1rem 0 0 0;
+
+  & .fa-solid {
+    /* margin: 2rem; */
+    font-size: 2.5rem;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    /* padding: 0; */
+  }
+}
+.control_system {
+  margin-top: 4.5rem;
+}
+
+.fa-play {
+  font-size: 2rem !important;
+  text-align: center;
+  padding: 1.2rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: black;
+  color: white;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    color: black;
+  }
+}
+::-moz-progress-bar {
+  color: aqua;
+}
+.fa-pause {
+  font-size: 2rem !important;
+  text-align: center;
+  padding: 1.2rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: black;
+  color: white;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    color: black;
+  }
+}
+
+.anime {
+  animation: rotate 1s infinite linear;
+  -webkit-animation: rotate 3.5s infinite linear;
+}
+@keyframes rotate {
+  0% {
+    rotate: 0;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+/* Progress Bar */
+#progressBar {
+  width: 100%;
+  cursor: pointer;
+  accent-color: black;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.duration {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0.2rem 0.2rem 0.2rem;
+}
+.start {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.end {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
